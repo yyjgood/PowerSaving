@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="/home/yyj/workspace/PowerSaving/res" >
+            <file
+                name="ic_launcher"
+                path="/home/yyj/workspace/PowerSaving/res/drawable-xxhdpi/ic_launcher.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="ic_action_search"
+                path="/home/yyj/workspace/PowerSaving/res/drawable-mdpi/ic_action_search.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/home/yyj/workspace/PowerSaving/res/drawable-mdpi/ic_launcher.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="div_line"
+                path="/home/yyj/workspace/PowerSaving/res/drawable-mdpi/div_line.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="top_header_bg"
+                path="/home/yyj/workspace/PowerSaving/res/drawable-mdpi/top_header_bg.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="start"
+                path="/home/yyj/workspace/PowerSaving/res/menu/start.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="splash_screen"
+                path="/home/yyj/workspace/PowerSaving/res/menu/splash_screen.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="search_device"
+                path="/home/yyj/workspace/PowerSaving/res/menu/search_device.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="activity_splash_screen"
+                path="/home/yyj/workspace/PowerSaving/res/layout/activity_splash_screen.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="headerlayout"
+                path="/home/yyj/workspace/PowerSaving/res/layout/headerlayout.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_start"
+                path="/home/yyj/workspace/PowerSaving/res/layout/activity_start.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_search_device"
+                path="/home/yyj/workspace/PowerSaving/res/layout/activity_search_device.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                path="/home/yyj/workspace/PowerSaving/res/values-v11/styles.xml"
+                qualifiers="v11" >
+
+                <style
+                    name="FullscreenTheme"
+                    parent="android:Theme.Holo" >
+                    <item name="android:actionBarStyle">
+@style/FullscreenActionBarStyle
+                    </item>
+                    <item name="android:windowActionBarOverlay">
+true
+                    </item>
+                    <item name="android:windowBackground">
+@null
+                    </item>
+                    <item name="buttonBarStyle">
+?android:attr/buttonBarStyle
+                    </item>
+                    <item name="buttonBarButtonStyle">
+?android:attr/buttonBarButtonStyle
+                    </item>
+                </style>
+
+                <style
+                    name="FullscreenActionBarStyle"
+                    parent="android:Widget.Holo.ActionBar" >
+                    <item name="android:background">
+@color/black_overlay
+                    </item>
+                </style>
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light" >
+
+                    <!-- API 11 theme customizations can go here. -->
+                </style>
+            </file>
+            <file
+                name="bg_tiled"
+                path="/home/yyj/workspace/PowerSaving/res/drawable-hdpi/bg_tiled.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_action_search"
+                path="/home/yyj/workspace/PowerSaving/res/drawable-hdpi/ic_action_search.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="progress_drawable"
+                path="/home/yyj/workspace/PowerSaving/res/drawable-hdpi/progress_drawable.xml"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/home/yyj/workspace/PowerSaving/res/drawable-hdpi/ic_launcher.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="selection"
+                path="/home/yyj/workspace/PowerSaving/res/drawable-hdpi/selection.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="spinner"
+                path="/home/yyj/workspace/PowerSaving/res/drawable-hdpi/spinner.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="selection_focus_btn"
+                path="/home/yyj/workspace/PowerSaving/res/drawable-hdpi/selection_focus_btn.9.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="custom_table_row"
+                path="/home/yyj/workspace/PowerSaving/res/drawable-hdpi/custom_table_row.xml"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="main_bg"
+                path="/home/yyj/workspace/PowerSaving/res/drawable-hdpi/main_bg.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="bg_style_tiled"
+                path="/home/yyj/workspace/PowerSaving/res/drawable-hdpi/bg_style_tiled.xml"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="btn_selector"
+                path="/home/yyj/workspace/PowerSaving/res/drawable-hdpi/btn_selector.xml"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="div_line"
+                path="/home/yyj/workspace/PowerSaving/res/drawable-hdpi/div_line.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="top_header_bg"
+                path="/home/yyj/workspace/PowerSaving/res/drawable-hdpi/top_header_bg.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                path="/home/yyj/workspace/PowerSaving/res/values-sw720dp-land/dimens.xml"
+                qualifiers="sw720dp-land" >
+                <dimen name="activity_horizontal_margin" >128dp
+                </dimen>
+            </file>
+            <file
+                path="/home/yyj/workspace/PowerSaving/res/values/integer.xml"
+                qualifiers="" >
+                <integer name="config_key_max_length" >
+16
+                </integer>
+            </file>
+            <file
+                path="/home/yyj/workspace/PowerSaving/res/values/dimens.xml"
+                qualifiers="" >
+                <dimen name="max_margin_size" >15dip
+                </dimen>
+                <dimen name="header_height" >50dip
+                </dimen>
+                <dimen name="extra_large_text_size" >22dip
+                </dimen>
+                <dimen name="footer_text_size" >8dip
+                </dimen>
+                <dimen name="splashscreen_margin_size" >50dip
+                </dimen>
+                <dimen name="min_margin_cutoff" >10dip
+                </dimen>
+                <dimen name="activity_horizontal_margin" >16dp
+                </dimen>
+                <dimen name="min_divider_height" >1dip
+                </dimen>
+                <dimen name="activity_vertical_margin" >16dp
+                </dimen>
+                <dimen name="footer_height" >40dip
+                </dimen>
+                <dimen name="small_text_height" >10dip
+                </dimen>
+                <dimen name="rowitem_text_size" >16dip
+                </dimen>
+                <dimen name="header_text_size" >20dip
+                </dimen>
+                <dimen name="name_font_size" >38sp
+                </dimen>
+                <dimen name="large_text_size" >16dip
+                </dimen>
+                <dimen name="about_title_label_side_margin" >20dip
+                </dimen>
+                <dimen name="about_title_label_top_margin" >30dip
+                </dimen>
+            </file>
+            <file
+                path="/home/yyj/workspace/PowerSaving/res/values/attrs.xml"
+                qualifiers="" >
+                <declare-styleable name="ButtonBarContainerTheme" >
+                    <attr
+                        name="buttonBarStyle"
+                        format="reference" />
+                    <attr
+                        name="buttonBarButtonStyle"
+                        format="reference" />
+                </declare-styleable>
+            </file>
+            <file
+                path="/home/yyj/workspace/PowerSaving/res/values/styles.xml"
+                qualifiers="" >
+
+                <style
+                    name="AppTheme"
+                    parent="android:Theme.Light" />
+            </file>
+            <file
+                path="/home/yyj/workspace/PowerSaving/res/values/colors.xml"
+                qualifiers="" >
+                <color name="grey_background" >#E1E1E1
+                </color>
+                <color name="text_color_grey" >#575757
+                </color>
+                <color name="blue_text_color" >#0000ED
+                </color>
+                <color name="white" >#FFFFFF
+                </color>
+                <color name="black" >#000000
+                </color>
+                <color name="disabled_text_color" >#9A9A9A
+                </color>
+                <color name="grey_text_color" >#545454
+                </color>
+                <color name="red" >#D20000
+                </color>
+                <color name="black_overlay" >#66000000
+                </color>
+                <color name="welcome_text_color" >#00F
+                </color>
+                <color name="button_normal" >#2888C4
+                </color>
+            </file>
+            <file
+                path="/home/yyj/workspace/PowerSaving/res/values/strings.xml"
+                qualifiers="" >
+                <string name="action_settings" >Settings
+                </string>
+                <string name="ssid_label" >SSID
+                </string>
+                <string name="gatewayip" >Gateway IP Address
+                </string>
+                <string name="welcome_experience_button" >体验 Power Saving 能效管理空间
+                </string>
+                <string name="alert_invalid_ssid_mesg" >Please enter valid SSID
+                </string>
+                <string name="alert_connection_failed" >Failed to configure CC3000 device
+                </string>
+                <string name="alert_invalid_password_msg" >Please enter valid password
+                </string>
+                <string name="alert_successfully_failed" >Failed to configure CC3000 device
+                </string>
+                <string name="welcome_know_button" >了解 Power Saving 智能插座
+                </string>
+                <string name="start_label" >Start
+                </string>
+                <string name="config_default_device_name" >Device Name
+                </string>
+                <string name="config_default_gateway_val" >127.0.0.1
+                </string>
+                <string name="alert_invalid_input_title" >Invalid input
+                </string>
+                <string name="alert_no_network_title" >No Network
+                </string>
+                <string name="key_label" >Key
+                </string>
+                <string name="dummy_content" >DUMMY\nCONTENT
+                </string>
+                <string name="devicename_label" >Device Name
+                </string>
+                <string name="alert_invalid_gatewayip_msg" >Please enter valid Gateway IP address
+                </string>
+                <string name="hello_world" >Hello world!
+                </string>
+                <string name="title_activity_search_device" >SearchDeviceActivity
+                </string>
+                <string name="config_title" >Device Configuration
+                </string>
+                <string name="alert_connection_timeout" >Connection to CC3000 was timed out.Please try again
+                </string>
+                <string name="alert_no_wifi_mesg" >WiFi not available.Please check your WiFi connection.
+                </string>
+                <string name="dummy_button" >Dummy Button
+                </string>
+                <string name="alert_successfully_connected" >CC3x App Connected Successfully
+                </string>
+                <string name="footer_title" >DESIGNED AND DEVELOPED BY
+                </string>
+                <string name="password_hint" >Password 
+                </string>
+                <string name="title_activity_fullscreen" >FullscreenActivity
+                </string>
+                <string name="stop_label" >Stop
+                </string>
+                <string name="title_activity_start" >StartActivity
+                </string>
+                <string name="app_name" >Power Saving
+                </string>
+                <string name="welcome_search_button" >搜索 Power Saving 智能插座
+                </string>
+                <string name="cc3000_version_text" >CC3000
+                </string>
+                <string name="alert_invalid_key_mesg" >Please enter valid Key exactly 16 characters
+                </string>
+            </file>
+            <file
+                path="/home/yyj/workspace/PowerSaving/res/values-v14/styles.xml"
+                qualifiers="v14" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light.DarkActionBar" >
+
+                    <!-- API 14 theme customizations can go here. -->
+                </style>
+            </file>
+            <file
+                name="ic_action_search"
+                path="/home/yyj/workspace/PowerSaving/res/drawable-xhdpi/ic_action_search.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/home/yyj/workspace/PowerSaving/res/drawable-xhdpi/ic_launcher.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="div_line"
+                path="/home/yyj/workspace/PowerSaving/res/drawable-xhdpi/div_line.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="top_header_bg"
+                path="/home/yyj/workspace/PowerSaving/res/drawable-xhdpi/top_header_bg.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+        </source>
+        <source path="/home/yyj/workspace/PowerSaving/build/res/rs/debug" />
+        <source path="/home/yyj/workspace/PowerSaving/build/res/generated/debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/home/yyj/workspace/PowerSaving/build-types/debug/res" />
+    </dataSet>
+
+</merger>

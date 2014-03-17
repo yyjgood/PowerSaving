@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcome"
+    style="@android:style/Theme.NoTitleBar.Fullscreen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_style_tiled"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    tools:context=".StartActivity" >
+
+    <Button
+        android:id="@+id/welcome_search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:gravity="left"
+        android:text="@string/welcome_search_button"
+        android:textColor="@color/welcome_text_color"
+        android:onClick="searchDeviceHandler"
+         />
+
+    <Button
+        android:id="@+id/welcome_know_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="@color/welcome_text_color"
+        android:gravity="left"
+        android:text="@string/welcome_know_button" />
+
+    <Button
+        android:id="@+id/welcome_experience_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:text="@string/welcome_experience_button"
+        android:textColor="@color/welcome_text_color" />
+
+</LinearLayout><!-- From: file:/home/yyj/workspace/PowerSaving/res/layout/activity_start.xml -->

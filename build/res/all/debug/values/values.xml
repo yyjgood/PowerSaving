@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/home/yyj/workspace/PowerSaving/res/values/colors.xml -->
+    <eat-comment />
+
+    <color name="black">#000000</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="blue_text_color">#0000ED</color>
+    <color name="button_normal">#2888C4</color>
+    <color name="disabled_text_color">#9A9A9A</color>
+    <color name="grey_background">#E1E1E1</color>
+    <color name="grey_text_color">#545454</color>
+    <color name="red">#D20000</color>
+    <color name="text_color_grey">#575757</color>
+    <color name="welcome_text_color">#00F</color>
+    <color name="white">#FFFFFF</color>
+    <!-- From: file:/home/yyj/workspace/PowerSaving/res/values/attrs.xml -->
+    <eat-comment />
+
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="buttonBarStyle" format="reference" />
+        <attr name="buttonBarButtonStyle" format="reference" />
+    </declare-styleable>
+    <!-- From: file:/home/yyj/workspace/PowerSaving/res/values/dimens.xml -->
+    <eat-comment />
+
+    <dimen name="about_title_label_side_margin">20dip</dimen>
+    <dimen name="about_title_label_top_margin">30dip</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="extra_large_text_size">22dip</dimen>
+    <dimen name="footer_height">40dip</dimen>
+    <dimen name="footer_text_size">8dip</dimen>
+    <dimen name="header_height">50dip</dimen>
+    <dimen name="header_text_size">20dip</dimen>
+    <dimen name="large_text_size">16dip</dimen>
+    <dimen name="max_margin_size">15dip</dimen>
+    <dimen name="min_divider_height">1dip</dimen>
+    <dimen name="min_margin_cutoff">10dip</dimen>
+    <dimen name="name_font_size">38sp</dimen>
+    <dimen name="rowitem_text_size">16dip</dimen>
+    <dimen name="small_text_height">10dip</dimen>
+    <dimen name="splashscreen_margin_size">50dip</dimen>
+    <!-- From: file:/home/yyj/workspace/PowerSaving/res/values/integer.xml -->
+    <eat-comment />
+
+    <integer name="config_key_max_length">16</integer>
+    <!-- From: file:/home/yyj/workspace/PowerSaving/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="action_settings">Settings</string>
+    <string name="alert_connection_failed">Failed to configure CC3000 device</string>
+    <string name="alert_connection_timeout">Connection to CC3000 was timed out.Please try again</string>
+    <string name="alert_invalid_gatewayip_msg">Please enter valid Gateway IP address</string>
+    <string name="alert_invalid_input_title">Invalid input</string>
+    <string name="alert_invalid_key_mesg">Please enter valid Key exactly 16 characters</string>
+    <string name="alert_invalid_password_msg">Please enter valid password</string>
+    <string name="alert_invalid_ssid_mesg">Please enter valid SSID</string>
+    <string name="alert_no_network_title">No Network</string>
+    <string name="alert_no_wifi_mesg">WiFi not available.Please check your WiFi connection.</string>
+    <string name="alert_successfully_connected">CC3x App Connected Successfully</string>
+    <string name="alert_successfully_failed">Failed to configure CC3000 device</string>
+    <string name="app_name">Power Saving</string>
+    <string name="cc3000_version_text">CC3000</string>
+    <string name="config_default_device_name">Device Name</string>
+    <string name="config_default_gateway_val">127.0.0.1</string>
+    <string name="config_title">Device Configuration</string>
+    <string name="devicename_label">Device Name</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="footer_title">DESIGNED AND DEVELOPED BY</string>
+    <string name="gatewayip">Gateway IP Address</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="key_label">Key</string>
+    <string name="password_hint">Password </string>
+    <string name="ssid_label">SSID</string>
+    <string name="start_label">Start</string>
+    <string name="stop_label">Stop</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="title_activity_search_device">SearchDeviceActivity</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="welcome_experience_button">体验 Power Saving 能效管理空间</string>
+    <string name="welcome_know_button">了解 Power Saving 智能插座</string>
+    <string name="welcome_search_button">搜索 Power Saving 智能插座</string>
+    <!-- From: file:/home/yyj/workspace/PowerSaving/res/values/styles.xml -->
+    <eat-comment />
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+</resources>
