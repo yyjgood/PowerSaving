@@ -180,6 +180,7 @@
                     android:imeOptions="actionNext"
                     android:maxLength="@integer/config_key_max_length"
                     android:singleLine="true"
+                    android:text="@string/cc3000_code"
                     android:textColor="@color/black"
                     android:textSize="@dimen/rowitem_text_size" />
 

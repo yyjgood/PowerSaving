@@ -72,7 +72,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int top_header_bg=0x7f02000c;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0015;
+        public static final int action_settings=0x7f0a0016;
         public static final int cofig_topbarRootview=0x7f0a0001;
         public static final int config_device_name_input=0x7f0a000c;
         public static final int config_device_name_label=0x7f0a000b;
@@ -90,6 +90,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int config_start_button=0x7f0a000e;
         public static final int header_text=0x7f0a0014;
         public static final int relativeLayout1=0x7f0a000d;
+        public static final int spinnertext1=0x7f0a0015;
         public static final int welcome=0x7f0a0010;
         public static final int welcome_experience_button=0x7f0a0013;
         public static final int welcome_know_button=0x7f0a0012;
@@ -99,32 +100,36 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int config_key_max_length=0x7f060000;
     }
     public static final class layout {
-        public static final int activity_search_device=0x7f030000;
-        public static final int activity_splash_screen=0x7f030001;
-        public static final int activity_start=0x7f030002;
-        public static final int headerlayout=0x7f030003;
+        public static final int activity_control_device=0x7f030000;
+        public static final int activity_search_device=0x7f030001;
+        public static final int activity_splash_screen=0x7f030002;
+        public static final int activity_start=0x7f030003;
+        public static final int headerlayout=0x7f030004;
+        public static final int spinner_element=0x7f030005;
     }
     public static final class menu {
-        public static final int search_device=0x7f090000;
-        public static final int splash_screen=0x7f090001;
-        public static final int start=0x7f090002;
+        public static final int control_device=0x7f090000;
+        public static final int search_device=0x7f090001;
+        public static final int splash_screen=0x7f090002;
+        public static final int start=0x7f090003;
     }
     public static final class string {
         public static final int action_settings=0x7f070001;
-        public static final int alert_connection_failed=0x7f070019;
-        public static final int alert_connection_timeout=0x7f07001a;
-        public static final int alert_invalid_gatewayip_msg=0x7f07001e;
-        public static final int alert_invalid_input_title=0x7f070017;
-        public static final int alert_invalid_key_mesg=0x7f070020;
-        public static final int alert_invalid_password_msg=0x7f07001d;
-        public static final int alert_invalid_ssid_mesg=0x7f07001f;
-        public static final int alert_no_network_title=0x7f07001c;
-        public static final int alert_no_wifi_mesg=0x7f070021;
-        public static final int alert_successfully_connected=0x7f070018;
-        public static final int alert_successfully_failed=0x7f07001b;
+        public static final int alert_connection_failed=0x7f07001a;
+        public static final int alert_connection_timeout=0x7f07001b;
+        public static final int alert_invalid_gatewayip_msg=0x7f07001f;
+        public static final int alert_invalid_input_title=0x7f070018;
+        public static final int alert_invalid_key_mesg=0x7f070021;
+        public static final int alert_invalid_password_msg=0x7f07001e;
+        public static final int alert_invalid_ssid_mesg=0x7f070020;
+        public static final int alert_no_network_title=0x7f07001d;
+        public static final int alert_no_wifi_mesg=0x7f070022;
+        public static final int alert_successfully_connected=0x7f070019;
+        public static final int alert_successfully_failed=0x7f07001c;
         public static final int app_name=0x7f070000;
+        public static final int cc3000_code=0x7f070016;
         public static final int cc3000_version_text=0x7f070015;
-        public static final int config_default_device_name=0x7f070016;
+        public static final int config_default_device_name=0x7f070017;
         public static final int config_default_gateway_val=0x7f070014;
         public static final int config_title=0x7f07000b;
         public static final int devicename_label=0x7f070011;
@@ -138,6 +143,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int ssid_label=0x7f07000e;
         public static final int start_label=0x7f070012;
         public static final int stop_label=0x7f070013;
+        public static final int title_activity_control_device=0x7f070023;
         public static final int title_activity_fullscreen=0x7f070004;
         public static final int title_activity_search_device=0x7f07000a;
         public static final int title_activity_start=0x7f070003;

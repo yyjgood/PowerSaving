@@ -12,39 +12,30 @@
     <string name="welcome_know_button">了解 Power Saving 智能插座</string>
     <string name="welcome_experience_button">体验 Power Saving 能效管理空间</string>
     <string name="title_activity_search_device">SearchDeviceActivity</string>
-
     <string name="config_title">Device Configuration</string>
     <string name="footer_title">DESIGNED AND DEVELOPED BY</string>
     <string name="password_hint">Password </string>
     <string name="ssid_label">SSID</string>
     <string name="gatewayip">Gateway IP Address</string>
-
     <string name="key_label">Key</string>
     <string name="devicename_label">Device Name</string>
     <string name="start_label">Start</string>
     <string name="stop_label">Stop</string>
-
-
     <string name="config_default_gateway_val">127.0.0.1</string>
-    <string name="cc3000_version_text">CC3000</string>
-
-
+    <string name="cc3000_version_text">home_assistant</string>
+    <string name="cc3000_code">smartconfigAES16</string>
     <string name="config_default_device_name">Device Name</string>
-
-
     <string name="alert_invalid_input_title">Invalid input</string>
-     <string name="alert_successfully_connected">CC3x App Connected Successfully</string>
-     <string name="alert_connection_failed">Failed to configure CC3000 device</string>
-       <string name="alert_connection_timeout">Connection to CC3000 was timed out.Please try again</string>
-      <string name="alert_successfully_failed">Failed to configure CC3000 device</string>
+    <string name="alert_successfully_connected">CC3x App Connected Successfully</string>
+    <string name="alert_connection_failed">Failed to configure CC3000 device</string>
+    <string name="alert_connection_timeout">Connection to CC3000 was timed out.Please try again</string>
+    <string name="alert_successfully_failed">Failed to configure CC3000 device</string>
     <string name="alert_no_network_title">No Network</string>
     <string name="alert_invalid_password_msg">Please enter valid password</string>
     <string name="alert_invalid_gatewayip_msg">Please enter valid Gateway IP address</string>
     <string name="alert_invalid_ssid_mesg">Please enter valid SSID</string>
     <string name="alert_invalid_key_mesg">Please enter valid Key exactly 16 characters</string>
     <string name="alert_no_wifi_mesg">WiFi not available.Please check your WiFi connection.</string>
-
-	
-
+    <string name="title_activity_control_device">ControlDeviceActivity</string>
 
 </resources>

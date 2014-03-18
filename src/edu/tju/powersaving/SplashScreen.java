@@ -24,7 +24,7 @@ public class SplashScreen extends Activity {
         
         setContentView(R.layout.activity_splash_screen);
         
-        //Timer to start CC3XConfigActivity 
+        //Timer to start SearchDeviceActivity
       	startTimer();
     }
     

@@ -235,7 +235,7 @@ public class SearchDeviceActivity extends Activity implements OnClickListener,
         mDeviceNameInputField = (EditText) findViewById(R.id.config_device_name_input);
         mconfigProgress = (ProgressBar) findViewById(R.id.config_progress);
         mconfig_key_checkbox = (CheckBox) findViewById(R.id.config_key_checkbox);
-        mconfig_key_checkbox.setChecked(false);
+        mconfig_key_checkbox.setChecked(true);
         mconfig_key_checkbox.setOnCheckedChangeListener(this);
         mKeyInputField.addTextChangedListener(this);
 
@@ -333,7 +333,7 @@ public class SearchDeviceActivity extends Activity implements OnClickListener,
         String passwdText = mPasswordInputField.getText().toString().trim();
         String deviceInput = mDeviceNameInputField.getText().toString().trim();
         if (deviceInput.length() == 0) {
-            deviceInput = "CC300";
+            deviceInput = "home_assistant";
         }
 
         byte[] totalBytes = null;
@@ -393,6 +393,10 @@ public class SearchDeviceActivity extends Activity implements OnClickListener,
                  * Show user alert on success
                  */
                 handler.sendEmptyMessage(PowerSavingConstants.DLG_CONNECTION_SUCCESS);
+                Intent configIntent=new Intent(SearchDeviceActivity.this, ControlDeviceActivity.class);
+				startActivity(configIntent);
+				finish();
+                
                 break;
             case FTC_TIMEOUT:
                 /**

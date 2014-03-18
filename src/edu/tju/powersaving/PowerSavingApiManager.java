@@ -1,9 +1,7 @@
 package edu.tju.powersaving;
 
 import com.integrity_project.smartconfiglib.FirstTimeConfigListener;
-import edu.tju.powersaving.ToastsManager;
-import edu.tju.powersaving.utils.PowerSavingConstants;
-import edu.tju.powersaving.SearchDeviceActivity;
+
 
 /**
  * A callback listener class implementing FirstTimeConfigListener from Jar file.

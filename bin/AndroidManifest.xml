@@ -7,11 +7,12 @@
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="19" />
+
     <uses-permission android:name="android.permission.INTERNET" />
-	<uses-permission  android:name="android.permission.ACCESS_NETWORK_STATE"/>
-	<uses-permission  android:name="android.permission.ACCESS_WIFI_STATE"/>
-	<uses-permission  android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
-	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
@@ -36,8 +37,12 @@
         <activity
             android:name="edu.tju.powersaving.SearchDeviceActivity"
             android:label="@string/title_activity_search_device"
-            android:windowSoftInputMode="adjustPan|stateHidden"  
-            android:theme="@android:style/Theme.NoTitleBar" >
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+        <activity
+            android:name="edu.tju.powersaving.ControlDeviceActivity"
+            android:label="@string/title_activity_control_device" >
         </activity>
     </application>
 
