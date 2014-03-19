@@ -13,12 +13,10 @@ public class StartActivity extends Activity {
 		setContentView(R.layout.activity_start);
 	}
 
-
-
 	public void searchDeviceHandler(View source) {
-		Intent configIntent=new Intent(StartActivity.this, SearchDeviceActivity.class);
+		Intent configIntent = new Intent(StartActivity.this,
+				SearchDeviceActivity.class);
 		startActivity(configIntent);
 	}
-	
-	
+
 }

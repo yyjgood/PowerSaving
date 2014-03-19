@@ -180,7 +180,6 @@
                     android:imeOptions="actionNext"
                     android:maxLength="@integer/config_key_max_length"
                     android:singleLine="true"
-                    android:text="@string/cc3000_code"
                     android:textColor="@color/black"
                     android:textSize="@dimen/rowitem_text_size" />
 
@@ -189,7 +188,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginRight="@dimen/min_margin_cutoff" />
+                    android:layout_marginRight="@dimen/min_margin_cutoff"
+                    android:checked="false"/>
             </LinearLayout>
         </LinearLayout>
 

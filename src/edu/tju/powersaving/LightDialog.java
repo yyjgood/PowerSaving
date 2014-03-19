@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import edu.tju.powersaving.ControlDeviceActivity.IntraDeviceCommunicator;
 import edu.tju.powersaving.utils.Appliance;
 
-
-
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -21,129 +19,122 @@ import android.app.Dialog;
 import android.content.Context;
 import android.graphics.RectF;
 
+public class LightDialog extends Dialog implements OnClickListener {
 
-public class LightDialog extends Dialog implements OnClickListener{
+	static byte LightLevel = 0;
+	private boolean blink;
+	private int blink_count = 0;
 
-    static byte LightLevel=0;
-    private boolean blink;
-    private int blink_count=0;
+	RectF SelectionRect;
 
-    RectF SelectionRect;
+	private Button LightDoneButton;
+	private SeekBar LightSeekBar;
 
-    private Button LightDoneButton;
-    private SeekBar LightSeekBar;
+	protected static final int Update_UI = 0;
 
-    protected static final int Update_UI = 0;
+	SeekBarMonitor seek_monitor = new SeekBarMonitor();
 
-    SeekBarMonitor seek_monitor = new SeekBarMonitor();
+	IntraDeviceCommunicator IDComm;
 
-    IntraDeviceCommunicator IDComm;
-    //Blinker  Blinky;
+	// Blinker Blinky;
 
+	public LightDialog(Context _context, ArrayList<Appliance> L, RectF rect) {
+		super(_context);
+		SelectionRect = rect;
+	}
 
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+		setContentView(R.layout.activity_light_dialog);
 
-    public LightDialog(Context _context, ArrayList<Appliance> L, RectF rect) {
-        super(_context);
-        SelectionRect=rect;
-    }
+		WindowManager.LayoutParams DialogParams;
+		DialogParams = getWindow().getAttributes();
+		DialogParams.height = 600;
+		DialogParams.width = 566;
+		DialogParams.dimAmount = .3333f;
+		getWindow().setAttributes(DialogParams);
 
+		LightDoneButton = (Button) findViewById(R.id.LightDoneButton);
+		LightDoneButton.setOnClickListener(this);
+		LightSeekBar = (SeekBar) findViewById(R.id.LightSeekBar);
+		LightSeekBar.setOnSeekBarChangeListener(seek_monitor);
+		LightSeekBar.setMax(255);
+	}
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.activity_light_dialog);
+	public void onClick(View v) {
 
-        WindowManager.LayoutParams DialogParams;
-        DialogParams = getWindow().getAttributes();
-        DialogParams.height=600;
-        DialogParams.width=566;
-        DialogParams.dimAmount=.3333f;
-        getWindow().setAttributes(DialogParams);
+		switch (v.getId()) {
+		case R.id.LightDoneButton:
+			dismiss();
+			break;
+		case R.id.spinnertext1:
 
-        LightDoneButton = (Button) findViewById(R.id.LightDoneButton);
-        LightDoneButton.setOnClickListener(this);
-        LightSeekBar = (SeekBar) findViewById(R.id.LightSeekBar);
-        LightSeekBar.setOnSeekBarChangeListener(seek_monitor);
-        LightSeekBar.setMax(255);
-    }
+			break;
+		}
+	}
 
+	private class SeekBarMonitor implements OnSeekBarChangeListener {
 
-    public void onClick(View v) {
+		@Override
+		public void onProgressChanged(SeekBar seekBar, int progress,
+				boolean fromUser) {
 
-        switch (v.getId()) {
-            case R.id.LightDoneButton:
-                dismiss();
-                break;
-            case R.id.spinnertext1:
+			LightLevel = (byte) seekBar.getProgress();
 
-                break;
-        }
-    }
+		}
 
+		@Override
+		public void onStartTrackingTouch(SeekBar seekBar) {
+		}
 
+		@Override
+		public void onStopTrackingTouch(SeekBar seekBar) {
 
-    private class SeekBarMonitor implements OnSeekBarChangeListener{
+		}
 
-        @Override
-        public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+	}
 
-            LightLevel=(byte)seekBar.getProgress();
+	public void HandleIDMessage(int dest, int command) {
+		if (command == 1) {
+			blink = true;
+		}
+		if (command == 0) {
+			blink = false;
+		}
 
-        }
+	}
 
-        @Override
-        public void onStartTrackingTouch(SeekBar seekBar) {
-        }
+	RectF GetSelectionRect() {
+		return SelectionRect;
+	}
 
-        @Override
-        public void onStopTrackingTouch(SeekBar seekBar) {
+	@SuppressLint("HandlerLeak")
+	final Handler handler = new Handler() {
+		@Override
+		public void handleMessage(Message msg) {
+			if (msg.what == Update_UI) {
+				PublicSetUI();
+			}
+			super.handleMessage(msg);
+		}
+	};
 
-        }
+	public void PublicSetUI() {
 
-    }
+	}
 
-    public void HandleIDMessage(int dest, int command){
-        if(command==1){
-            blink=true;
-        }
-        if(command==0){
-            blink=false;
-        }
-
-    }
-
-
-
-    RectF GetSelectionRect()
-    {
-        return SelectionRect;
-    }
-
-
-    @SuppressLint("HandlerLeak")
-    final Handler handler = new Handler(){
-        @Override
-        public void handleMessage(Message msg){
-            if(msg.what == Update_UI){
-                PublicSetUI();
-            }
-            super.handleMessage(msg);
-        }
-    };
-
-    public void PublicSetUI()
-    {
-
-    }
-
-    public void Updatebuffer(byte[] outbuffer)
-    {
-        if(blink){
-            blink_count++;
-            if(blink_count==3)outbuffer[3]=0;
-            if(blink_count>=6){outbuffer[3]=(byte) 255; blink_count=0;}
-        }
-        else outbuffer[3]=(byte) (LightLevel);
-    }
+	public void Updatebuffer(byte[] outbuffer) {
+		if (blink) {
+			blink_count++;
+			if (blink_count == 3)
+				outbuffer[3] = 0;
+			if (blink_count >= 6) {
+				outbuffer[3] = (byte) 255;
+				blink_count = 0;
+			}
+		} else
+			outbuffer[3] = (byte) (LightLevel);
+	}
 }

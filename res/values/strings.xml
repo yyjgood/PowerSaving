@@ -22,8 +22,7 @@
     <string name="start_label">Start</string>
     <string name="stop_label">Stop</string>
     <string name="config_default_gateway_val">127.0.0.1</string>
-    <string name="cc3000_version_text">home_assistant</string>
-    <string name="cc3000_code">smartconfigAES16</string>
+    <string name="cc3000_version_text">CC3000</string>
     <string name="config_default_device_name">Device Name</string>
     <string name="alert_invalid_input_title">Invalid input</string>
     <string name="alert_successfully_connected">CC3x App Connected Successfully</string>
