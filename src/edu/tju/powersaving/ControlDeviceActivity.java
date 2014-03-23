@@ -248,6 +248,7 @@ public class ControlDeviceActivity extends Activity implements
 						// rgblightdialog.Updatebuffer(outbuffer);
 
 						// windowdialog.Updatebuffer(outbuffer);
+                        lightdialog.Updatebuffer(outbuffer);
 
 						SendData(outbuffer);
 						Log.d("MainActivity", "Sending Data");

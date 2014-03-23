@@ -13,7 +13,11 @@
   </component>
   <component name="FacetManager">
     <facet type="android" name="Android">
-      <configuration />
+      <configuration>
+        <proGuardCfgFiles>
+          <file>file://$USER_HOME$/android-sdk-linux/tools/proguard/proguard-android.txt</file>
+        </proGuardCfgFiles>
+      </configuration>
     </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
@@ -26,7 +30,6 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 19 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="com.android.ide.eclipse.adt.DEPENDENCIES" level="application" />
     <orderEntry type="module-library">
       <library name="smartconfiglib.jar">
         <CLASSES>

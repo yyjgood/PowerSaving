@@ -288,8 +288,7 @@ public class SearchDeviceActivity extends Activity implements OnClickListener,
 			}
 
 			firstConfig.transmitSettings();
-			mSendDataPackets
-					.setBackgroundResource(R.drawable.selection_focus_btn);
+			mSendDataPackets.setBackgroundResource(R.drawable.selection_focus_btn);
 			mconfigProgress.setVisibility(ProgressBar.VISIBLE);
 		} else {
 			if (firstConfig != null) {
@@ -336,7 +335,7 @@ public class SearchDeviceActivity extends Activity implements OnClickListener,
 		String passwdText = mPasswordInputField.getText().toString().trim();
 		String deviceInput = mDeviceNameInputField.getText().toString().trim();
 		if (deviceInput.length() == 0) {
-			deviceInput = "home_assistant";
+			deviceInput = "CC3000";
 		}
 
 		byte[] totalBytes = null;
@@ -484,7 +483,7 @@ public class SearchDeviceActivity extends Activity implements OnClickListener,
 		super.onPause();
 	}
 
-	private boolean isKeyChecked = true;
+	private boolean isKeyChecked = false;
 
 	/**
 	 * Default listener for checkbox the encrypted key is enabled or disabled
@@ -650,7 +649,6 @@ public class SearchDeviceActivity extends Activity implements OnClickListener,
 					// wifi connection was lost
 
 					if (!(getWiFiManagerInstance().isWifiConnected())) {
-						// TODO 这里需要设置isNetworkConnecting为fasle？
 						isNetworkConnecting = false;
 
 					}

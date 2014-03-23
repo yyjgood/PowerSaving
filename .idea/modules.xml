@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../CC3XXX Home Automation/CC3xxx Home Automation.iml" filepath="$PROJECT_DIR$/../CC3XXX Home Automation/CC3xxx Home Automation.iml" />
       <module fileurl="file://$PROJECT_DIR$/PowerSaving.iml" filepath="$PROJECT_DIR$/PowerSaving.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SmartConfigCC3X/SmartConfigCC3X.iml" filepath="$PROJECT_DIR$/../SmartConfigCC3X/SmartConfigCC3X.iml" />
     </modules>
   </component>
 </project>
